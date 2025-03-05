@@ -18,7 +18,7 @@ jobs:
           node-version: 20
 
       - name: Build Angular app to prod
-        working-directory: runelog
+        working-directory: runelog-app
         run: npm install && npm run build:prod
 
       - name: Deploy to GitHub Pages
