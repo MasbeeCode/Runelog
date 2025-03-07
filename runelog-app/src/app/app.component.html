@@ -1,9 +1,19 @@
-<mat-sidenav-container>
-    <mat-sidenav opened="true" mode="side" fixedInViewport="true">
-        Nav List
-    </mat-sidenav>
-    <mat-sidenav-content>
-        Main Content
-    </mat-sidenav-content>
-</mat-sidenav-container>
-<router-outlet />
+<div class="container">
+    <mat-toolbar>
+        <button mat-button><mat-icon>menu</mat-icon></button>
+        <h1>Runelog</h1>
+    </mat-toolbar>
+
+    <mat-sidenav-container class="sidenav-container">
+        <mat-sidenav #snav opened="true" mode="side">
+            <mat-nav-list aria-label="Navigation List">
+                <a mat-list-item>Reaper</a>
+                <a mat-list-item>Slayer</a>
+                <a mat-list-item>Clues</a>
+            </mat-nav-list>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <router-outlet />
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>
