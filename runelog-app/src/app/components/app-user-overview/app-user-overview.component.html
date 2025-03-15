@@ -14,9 +14,7 @@
     </mat-card-header>
     <mat-card-content>
         <ul>
-            <li>Bosses</li>
-            <li>Slayer</li>
-            <li>Clues</li>
+            <li *ngFor="let feat of user.feats">{{feat.name}}</li>
         </ul>
     </mat-card-content>
 </mat-card>
